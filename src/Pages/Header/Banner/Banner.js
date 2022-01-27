@@ -10,7 +10,7 @@ const Banner = () => {
         <>
             <Carousel className="Carousel">
 
-                <Carousel.Item interval={1000}>
+                <Carousel.Item>
                     <img
                         className="d-block w-100 height"
                         src="https://i.ibb.co/hdpdzc8/banner1.jpg"
@@ -21,7 +21,7 @@ const Banner = () => {
                         <h6 className='text'> The largest part of the world, both in territory and in population</h6>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval={1000}>
+                <Carousel.Item>
                     <img
                         className="d-block w-100 height"
                         src="https://i.ibb.co/0Xhh36P/banner2.jpg"
@@ -32,7 +32,7 @@ const Banner = () => {
                         <h5 className='text'> The capital and largest city as well as the community of Iceland</h5>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval={1000}>
+                <Carousel.Item>
                     <img
                         className="d-block w-100 height"
                         src="https://i.ibb.co/C252gPM/banner3.jpg"

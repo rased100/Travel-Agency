@@ -21,24 +21,25 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Column>
-                        <Heading>About Us</Heading>
-                        <FooterLink href="#">Aim</FooterLink>
-                        <FooterLink href="#">Vision</FooterLink>
-                        <FooterLink href="#">Testimonials</FooterLink>
+                        <Heading>Travel list</Heading>
+                        <FooterLink href="#">Travel list Fullwidth</FooterLink>
+                        <FooterLink href="#">Travel list Sidebar</FooterLink>
+                        <FooterLink href="#">Travel list Left Sidebar</FooterLink>
+                        <FooterLink href="#">Tour page with reply</FooterLink>
                     </Column>
                     <Column>
-                        <Heading>Services</Heading>
-                        <FooterLink href="#">Writing</FooterLink>
-                        <FooterLink href="#">Internships</FooterLink>
-                        <FooterLink href="#">Coding</FooterLink>
-                        <FooterLink href="#">Teaching</FooterLink>
+                        <Heading>Page</Heading>
+                        <FooterLink href="#">Stories Fullwidth</FooterLink>
+                        <FooterLink href="#">Stories Single</FooterLink>
+                        <FooterLink href="#">Stories Right Sidebar</FooterLink>
+                        <FooterLink href="#">Stories Left Sidebar</FooterLink>
                     </Column>
                     <Column>
                         <Heading>Contact Us</Heading>
-                        <FooterLink href="#">Uttar Pradesh</FooterLink>
-                        <FooterLink href="#">Ahemdabad</FooterLink>
-                        <FooterLink href="#">Indore</FooterLink>
-                        <FooterLink href="#">Mumbai</FooterLink>
+                        <FooterLink href="#">United State</FooterLink>
+                        <FooterLink href="#">India</FooterLink>
+                        <FooterLink href="#">Bangladesh</FooterLink>
+                        <FooterLink href="#">Australia</FooterLink>
                     </Column>
                     <Column>
                         <Heading>Social Media</Heading>
@@ -73,7 +74,7 @@ const Footer = () => {
                     </Column>
                 </Row>
             </Container>
-            <span className='d-flex justify-content-evenly mt-5'>
+            <span className='d-flex justify-content-between mt-5'>
                 <p className='text-white'>Privacy Policy</p>
                 <p className='text-white'>Copyright © 2022</p>
             </span>

@@ -5,6 +5,9 @@ import { getAuth, createUserWithEmailAndPassword, updateProfile, signOut, signIn
 initializeFirebase();
 
 const useFirebase = () => {
+    const [blogs, setBlogs] = useState([]);
+    console.log('blogs', blogs)
+
     const [user, setUser] = useState({});
     console.log('travel user', user);
     const [isLoading, setIsLoading] = useState(true);
@@ -12,6 +15,12 @@ const useFirebase = () => {
 
     const auth = getAuth();
     const provider = new GoogleAuthProvider();
+
+    useEffect(() => {
+        fetch('http://localhost:5000/blogs')
+            .then(res => res.json())
+            .then(data => setBlogs(data))
+    }, [])
 
     const registerUser = (email, password, name, navigate) => {
         setIsLoading(true);
@@ -97,7 +106,8 @@ const useFirebase = () => {
         logout,
         loginUser,
         isLoading,
-        authError
+        authError,
+        blogs
     }
 }
 
