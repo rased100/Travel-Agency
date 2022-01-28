@@ -7,7 +7,7 @@ const AddBlog = () => {
     const { user } = useAuth();
 
     const onSubmit = (data) => {
-        fetch("https://nameless-gorge-19964.herokuapp.com/blogs", {
+        fetch("https://nameless-gorge-19964.herokuapp.comblogs", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

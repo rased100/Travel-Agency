@@ -13,6 +13,8 @@ import Blogs from './Pages/Blogs/Blogs/Blogs';
 import Private from './Pages/Private/Private';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import AddBlog from './Pages/AddBlog/AddBlog';
+import MakeAdmin from './Pages/MakeAdmin/MakeAdmin';
+import DashboardHome from './Pages/DashboarhHome/DashboardHome';
 
 function App() {
   return (
@@ -25,8 +27,13 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/blogs" element={<Blogs />} />
-            <Route path="/addblog" element={<AddBlog />} />
-            <Route path="/dashboard" element={<Dashboard />} />
+            {/* <Route path="/addblog" element={<AddBlog />} />
+            <Route path="/makeadmin" element={<MakeAdmin />} /> */}
+            <Route path="/dashboard" element={<Dashboard />}>
+              <Route path="/dashboard" element={<DashboardHome />} />
+              <Route path="/dashboard/makeadmin" element={<MakeAdmin />} />
+              <Route path="/dashboard/addblog" element={<AddBlog />} />
+            </Route>
             <Route path="/blog/:Id" element={<Private><TravelExperience /></Private>}></Route>
           </Routes>
         </Router>

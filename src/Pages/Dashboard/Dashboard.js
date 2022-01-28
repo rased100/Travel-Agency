@@ -12,10 +12,13 @@ import {
 } from "react-router-dom";
 import { Button } from '@mui/material';
 import AddBlog from '../AddBlog/AddBlog';
+import MakeAdmin from '../MakeAdmin/MakeAdmin';
+import useAuth from '../hooks/useAuth';
 
 const drawerWidth = 200;
 
 function Dashboard(props) {
+    const { admin } = useAuth();
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -28,8 +31,12 @@ function Dashboard(props) {
         <div>
             <Toolbar />
             <Divider />
+            <Link to="/"><Button color="inherit">Home</Button></Link><br />
             <Link to="/dashboard"><Button color="inherit">Dashboard</Button></Link><br />
-            <Link to="/addblog"><Button color="inherit">Add new blog</Button></Link><br />
+            {admin && <Box>
+                <Link to="/dashboard/addblog"><Button color="inherit">Add new blog</Button></Link><br />
+                <Link to="/dashboard/makeadmin"><Button color="inherit">Make Admin</Button></Link><br />
+            </Box>}
 
             <Box>
                 {/* {admin && <Box> */}
@@ -94,9 +101,7 @@ function Dashboard(props) {
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
                 <Toolbar />
-
                 <Outlet></Outlet>
-                <AddBlog></AddBlog>
 
             </Box>
         </Box>

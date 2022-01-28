@@ -12,6 +12,7 @@ const useFirebase = () => {
     console.log('travel user', user);
     const [isLoading, setIsLoading] = useState(true);
     const [authError, setAuthError] = useState('');
+    const [admin, setAdmin] = useState(false);
 
     const auth = getAuth();
     const provider = new GoogleAuthProvider();
@@ -29,10 +30,11 @@ const useFirebase = () => {
                 setAuthError('');
                 const newUser = { email, displayName: name };
                 setUser(newUser);
+                saveUser(email, name, 'POST');
                 updateProfile(auth.currentUser, {
                     displayName: name
                 });
-                // navigate('/');
+                navigate('/');
             })
             .catch((error) => {
                 setAuthError(error.message);
@@ -45,10 +47,12 @@ const useFirebase = () => {
     const handleGoogleSignIn = (email, password, location, navigate) => {
         setIsLoading(true);
         signInWithPopup(auth, provider)
-            .then((userCredential) => {
+            .then((result) => {
+                const user = result.user;
+                saveUser(user.email, user.displayName, 'PUT');
+                setAuthError('');
                 const destination = location?.state?.from || '/';
                 navigate(destination);
-                setAuthError('');
             })
             .catch((error) => {
                 setAuthError(error.message);
@@ -99,6 +103,25 @@ const useFirebase = () => {
                 setIsLoading(false);
             });
     }
+
+    const saveUser = (email, displayName, method) => {
+        const user = { email, displayName };
+        fetch('https://nameless-gorge-19964.herokuapp.com/users', {
+            method: method,
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then()
+    }
+
+    useEffect(() => {
+        fetch(`https://nameless-gorge-19964.herokuapp.com/users/${user.email}`)
+            .then(res => res.json())
+            .then(data => setAdmin(data.admin))
+    }, [user.email])
+
     return {
         user,
         registerUser,
@@ -107,7 +130,8 @@ const useFirebase = () => {
         loginUser,
         isLoading,
         authError,
-        blogs
+        blogs,
+        admin
     }
 }
 
