@@ -29,13 +29,12 @@ const Register = () => {
         <Box sx={{ mt: 8 }} item xs={12} md={6}>
             <Typography variant="body1" gutterBottom>Register
             </Typography>
-            {/* {!isLoading && <form onSubmit={handleLoginSubmit}> */}
-            <form onSubmit={handleLoginSubmit}>
+            {!isLoading && <form onSubmit={handleLoginSubmit}>
                 <TextField
                     sx={{ width: '50%', m: 1 }}
                     id="standard-basic"
                     label="Your Name"
-                    name="name"
+                    name="displayName"
                     type="name"
                     onBlur={handleOnChange}
                     variant="standard" />
@@ -73,16 +72,15 @@ const Register = () => {
                     to="/login">
                     <Button variant="text">Already Registered? Please Login</Button>
                 </NavLink>
-            </form>
-            {/* </form>} */}
-            {/* {isLoading && <CircularProgress />} */}
+            </form>}
+            {isLoading && <CircularProgress />}
 
             <Box sx={{ width: '50%' }}>
                 {
                     user?.email && <Alert severity="success">User created successfully !</Alert>
                 }
                 {
-                    // authError && <Alert severity="error">{authError}</Alert>
+                    authError && <Alert severity="error">{authError}</Alert>
                 }
             </Box>
         </Box>

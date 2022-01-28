@@ -1,0 +1,25 @@
+.experience{
+    background-image: url('https://i.ibb.co/nr4D6jc/tour-page.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.image{
+    border-radius: 10px;
+}
+.tx{
+    font-size: 3rem;
+}
+.title{
+    font-size: 40px;
+}
+.date{
+    font-size: 48px;
+    color: #fff;
+    font-family: 'Prata', serif;
+    line-height: 1.2;
+}
+.rating{
+    border-radius: 3px;
+
+}

@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
@@ -5,7 +6,7 @@ import useAuth from '../../hooks/useAuth';
 import './Navigation.css';
 
 const Navigation = () => {
-    const { user, logOut } = useAuth();
+    const { user, logout } = useAuth();
     console.log('nav', user);
     return (
         <Navbar bg="" variant="dark" expand="lg" fixed="top" className="Navbar">
@@ -17,12 +18,15 @@ const Navigation = () => {
                         <NavLink className="navitem items navlink" to="/home">
                             Home
                         </NavLink>
-                        <NavLink className="navitem items navlink" to="/dashboard">
-                            Dashboard
-                        </NavLink>
+                        {user?.email &&
+                            <NavLink className="navitem items navlink" to="/dashboard">
+                                Dashboard
+                            </NavLink>
+                        }
+
                         <h6 className="navitem items mx-2 navlink">{user?.displayName}</h6>
                         {user?.email ? (
-                            <NavLink onClick={logOut} className="navitem items navlink" to="/login">
+                            <NavLink onClick={logout} className="navitem items navlink" to="/login">
                                 Logout
                             </NavLink>
                         ) : (

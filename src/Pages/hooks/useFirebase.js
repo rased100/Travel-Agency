@@ -17,7 +17,7 @@ const useFirebase = () => {
     const provider = new GoogleAuthProvider();
 
     useEffect(() => {
-        fetch('http://localhost:5000/blogs')
+        fetch('https://nameless-gorge-19964.herokuapp.com/blogs')
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [])

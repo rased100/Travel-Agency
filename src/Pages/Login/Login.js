@@ -49,6 +49,7 @@ const Login = () => {
                             variant="standard" /> <br />
 
                         <Button sx={{ width: '25%', m: 1 }} type="submit" variant="contained">Login</Button><br />
+
                         <NavLink
                             style={{ textDecoration: 'none' }}
                             to="/register">

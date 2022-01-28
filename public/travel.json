@@ -9,7 +9,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "01"
     },
     {
@@ -22,7 +22,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "02"
     },
     {
@@ -35,7 +35,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "03"
     },
     {
@@ -48,7 +48,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "04"
     },
     {
@@ -61,7 +61,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "05"
     },
     {
@@ -74,7 +74,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "06"
     },
     {
@@ -87,7 +87,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "07"
     },
     {
@@ -100,7 +100,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "08"
     },
     {
@@ -113,7 +113,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "09"
     },
     {
@@ -126,7 +126,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "10"
     },
     {
@@ -139,7 +139,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "11"
     },
     {
@@ -152,7 +152,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "12"
     },
     {
@@ -165,7 +165,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "13"
     },
     {
@@ -178,7 +178,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "14"
     },
     {
@@ -191,7 +191,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "15"
     },
     {
@@ -204,7 +204,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "16"
     },
     {
@@ -217,7 +217,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "17"
     },
     {
@@ -230,7 +230,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "18"
     },
     {
@@ -243,7 +243,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "19"
     },
     {
@@ -256,7 +256,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "20"
     },
     {
@@ -269,7 +269,7 @@
         "location": "Africa",
         "date": "27-jan-2022",
         "time": "10:00pm",
-        "rating": "4",
+        "rating": 4,
         "sl": "21"
     }
 ]

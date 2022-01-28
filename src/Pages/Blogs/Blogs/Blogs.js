@@ -1,8 +1,9 @@
 import React from 'react';
 import useAuth from '../../hooks/useAuth';
-import { Container, Grid } from '@mui/material';
+import { Container, Grid, Pagination } from '@mui/material';
 import { Box } from '@mui/system';
 import Blog from '../Blog/Blog';
+import './Blogs.css';
 
 const Blogs = () => {
     const { blogs } = useAuth();
@@ -15,8 +16,10 @@ const Blogs = () => {
                     {
                         blogs.map(blog => <Blog blog={blog}></Blog>)
                     }
+
                 </Grid>
             </Box>
+            <Pagination className="pagination" count={10} />
         </Container >
     );
 };
